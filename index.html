@@ -1,1 +1,65 @@
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Rock, Papers, Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <span id="rock-title">ROCK </span>
+        <span id="paper-title"> PAPER </span>
+        <span id="scissor-title"> SCISSORS</span>
+    </header>
+    <div class="text-container">
+        <span class="starting-info">
+            You vs the computer, first to 5 wins!
+            <br>
+            Click start to play!
+        </span>
+        <span class="score-info hidden"></span>
+        <span class="game-info hidden"></span>
+
+    </div>
+    <div class="game-container">
+        <div class="game-container__start game-container--focus focussed">
+            <div id="start">
+                <button id="start-button">START</button>
+            </div>
+        </div>
+        <div class="game-container__player game-container--focus">
+            <div id="player">
+                <span class="player--text">Play your turn!</span>
+                <div class="player--buttons"> 
+                    <!-- https://www.flaticon.com/free-icons/rock-paper-scissors Rock paper scissors icons created by Freepik - Flaticon-->
+                    <button id="rock-button" value="0"><img src="rock.png"/></button>
+                    <button id="paper-button" value="1"><img src="paper.png"/></button>
+                    <button id="scissors-button" value="2"><img src="scissors.png"/></button>
+                </div>
+            </div>
+        </div>
+        <div class="game-container__computer game-container--focus">
+            <div class="results-container">
+                <div class="player__selection">
+                    <span class="player__selection-text">
+                        You selected:
+                    </span>
+                    <img id="players-selection-img">
+                </div>
+                <div class="computer__selection">
+                    <span class="computer__selection-text">
+                        The computer selected:
+                    </span>
+                    <img id="computers-selection-img">
+                </div>
+            </div>
+            <button id="next-round-btn">Next round</button>
+            <button id="play-again-btn" class="hidden">Play again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
