@@ -81,8 +81,6 @@ function computerPlay(){
 //using integers to represent the rock, paper and scissors
 //Rock = 0, Paper = 1, Scissors = 2
 function playRound(playerSelection, computerSelection){
-
-    console.log(playerSelection+' : '+computerSelection);
     
     if(playerSelection === computerSelection){
         return `It's a tie! ${arr[computerSelection]} vs ${arr[playerSelection]}`;
