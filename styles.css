@@ -183,3 +183,14 @@ button.hidden{
     margin-top:20px; 
 
 }
+footer{
+    position: absolute; 
+    bottom: 0; 
+    font-family: sans-serif;
+    font-weight: bold; 
+}
+footer a{
+    text-decoration: none;
+    margin-bottom: 21px;
+    display: flex;
+}

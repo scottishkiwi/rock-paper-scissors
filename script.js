@@ -1,6 +1,6 @@
-const ROCK_IMG_URL = 'rock.png';
-const PAPER_IMG_URL = 'paper.png';
-const SCISSOR_IMG_URL = 'scissors.png';
+const ROCK_IMG_URL = 'images/rock.png';
+const PAPER_IMG_URL = 'images/paper.png';
+const SCISSOR_IMG_URL = 'images/scissors.png';
 
 let arr = ['ROCK', 'PAPER', 'SCISSORS'];
 let playerScore; 
